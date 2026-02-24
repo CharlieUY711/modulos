@@ -1,0 +1,45 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* ── DashboardShell: estilos globales del shell ── */
+
+/* Elimina el scroll en el body para que el shell controle el overflow */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Scrollbar personalizada para el área de contenido de módulos */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--shell-border, #E5E7EB);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shell-text-muted, #9CA3AF);
+}
+
+/* Previene el texto azul de selección en elementos de navegación */
+nav a {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Botones sin highlight en móvil */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
