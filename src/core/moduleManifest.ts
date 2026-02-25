@@ -172,8 +172,8 @@ export const MODULE_MANIFEST: ManifestEntry[] = [
     section: 'rutas',
     viewFile: 'RutasView.tsx',
     isReal: true,
-    hasSupabase: false,
-    notes: 'Rutas standard y por proyecto · vista detalle con paradas · progreso de entrega',
+    hasSupabase: true,
+    notes: 'Rutas standard y por proyecto · vista detalle con paradas · progreso de entrega · CRUD completo con Supabase',
   },
   {
     checklistIds: ['logistics-fulfillment'],
